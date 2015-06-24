@@ -2,27 +2,25 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.tp2</groupId>
-    <artifactId>P_Sinfo</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>war</packaging>
+        <groupId>com.tp2</groupId>
+        <artifactId>P_Sinfo</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <packaging>war</packaging>
 
-    <name>P_Sinfo</name>
+        <name>P_Sinfo</name>
 
-    <properties>
-        <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
+        <properties>
+            <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
+            <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        </properties>
     
-    <dependencies>
-        <dependency>
-            <groupId>commons-codec</groupId>
-            <artifactId>commons-codec</artifactId>
-            <version>1.8</version>
-        </dependency>
-        
-        
-        
+        <dependencies>
+            <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>1.8</version>
+            </dependency>
+            
         <dependency>
             <groupId>org.ocpsoft.rewrite</groupId>
             <artifactId>rewrite-config-prettyfaces</artifactId>
@@ -86,10 +84,14 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>2.3</version>
+                <version>2.6</version>
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
+                    <webappDirectory>/sample/servlet/container/deploy/directory</webappDirectory>
                 </configuration>
+                
+                
+                
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
